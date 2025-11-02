@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detection Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detection App</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Detect Emotion</button>
+        </form>
+        {% if emotion %}
+            <h2>Detected Emotion: {{ emotion }}</h2>
+            <img src="{{ image_path }}" alt="Uploaded Image" width="300">
+        {% endif %}
+    </div>
+</body>
+</html>

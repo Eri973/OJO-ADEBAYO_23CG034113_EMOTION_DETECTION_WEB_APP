@@ -1,6 +1,6 @@
-flask
-tensorflow
-keras
-opencv-python
-pillow
-numpy
+Flask==2.3.2
+tensorflow==2.16.1
+numpy==1.26.4
+opencv-python==4.10.0.84
+Werkzeug==3.0.1
+gunicorn==21.2.0

@@ -1,6 +1,27 @@
-Flask==2.3.2
-tensorflow-cpu==2.20.0
+# Web framework
+Flask==3.0.3
+Werkzeug==3.0.3
+Jinja2==3.1.4
+itsdangerous==2.2.0
+
+# Machine learning / deep learning
+tensorflow==2.20.0
 numpy==1.26.4
+protobuf==4.25.4
+h5py==3.11.0
+keras==3.6.0
+opt-einsum==3.4.0
+flatbuffers==24.3.25
+astunparse==1.6.3
+gast==0.6.0
+wrapt==1.16.0
+
+# Image processing
 opencv-python==4.10.0.84
-Werkzeug==3.0.1
-gunicorn==21.2.0
+pillow==10.4.0
+
+# Model serving
+gunicorn==23.0.0
+
+# Utilities
+click==8.1.7
